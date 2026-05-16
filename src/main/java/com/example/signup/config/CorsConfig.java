@@ -11,7 +11,7 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
 
         registry.addMapping("/**")
-                .allowedOrigins("http://192.168.0.110:5500")
+                .allowedOrigins("https://verdant-jalebi-a7453d.netlify.app/")
                 .allowedMethods("*");
     }
 }
