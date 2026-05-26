@@ -8,21 +8,21 @@ public class Signup {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="reference_id",nullable = false, length =100)
     private int referenceId;
-
+    @Column(name="first_name",nullable = false,length =100)
     private String firstName;
-
+    @Column(name="middle_name",nullable = true ,length =100)
     private String middleName;
-
+    @Column(name = "last_name",nullable = false,length =100)
     private String lastName;
 
-    @Column(unique = true)
+    @Column(name="emailid",unique = true, nullable = false,length =100)
     private String emailid;
-
+    @Column(name="mobile_number",nullable = false,length =100)
     private Long mobileNumber;
-
+    @Column(name="password",nullable = false,length =190)
     private String password;
-
     public Signup() {
     }
 
