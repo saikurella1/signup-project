@@ -21,7 +21,7 @@ public class Signup {
     private String emailid;
     @Column(name="mobile_number",nullable = false,length =100)
     private Long mobileNumber;
-    @Column(name="password",nullable = false,length =190)
+    @Column(name="password",nullable = false,length =100)
     private String password;
     public Signup() {
     }
