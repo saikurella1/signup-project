@@ -10,9 +10,9 @@ public class Signup {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="reference_id",nullable = false, length =100)
     private int referenceId;
-    @Column(name="first_name",nullable = false,length =100)
+    @Column(name="first_name",nullable = false,length =10)
     private String firstName;
-    @Column(name="middle_name",nullable = true ,length =100)
+    @Column(name="middle_name",nullable = true ,length =10)
     private String middleName;
     @Column(name = "last_name",nullable = false,length =100)
     private String lastName;
